@@ -2,67 +2,62 @@
 layout: default
 ---
 
-## A Jekyll template for publishing single-page websites and articles that are incredibly readable and fully responsive
+## A end-to-end, functional-first stack for cloud-ready web development that emphasises type safe programming.
 
-### Nice, clean, reading!
+### What is SAFE?
+SAFE is a technology stack that brings together several technologies into a single, coherent stack for typesafe, flexible end-to-end web-enabled applications that are written entirely in F#.
 
-Good clean read is set up with readability first in mind. Whatever you want to communicate here can be read easily, and without distraction. Of course, it's fully responsive, which means people can read it naturally on any phone, or tablet. Write it in markdown in <code>index.md</code> and get a beautifully published piece.
+The default stack consists of the following core components
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+![](images/stack.png)
 
-> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+#### Suave IO
+> Suave is a lightweight, non-blocking web server. The non-blocking I/O model is efficient and suitable for building fast, scalable network applications. In fact, Suave is written in a completely non-blocking fashion throughout. Suave runs on Linux, OS X and Windows flawlessly.
 
-### With footnotes too!
+#### Azure
+> Microsoft Azure is a growing collection of integrated cloud services that developers and IT professionals use to build, deploy, and manage applications through our global network of datacenters. With Azure, you get the freedom to build and deploy wherever you want, using the tools, applications, and frameworks of your choice.
 
-Back up your stuff with solid, clean citations. Footnotes can be written in markdown and appear like this.[^1] Use as many as you like.[^2]
+#### Fable
+> Fable brings all the power of F# to the JavaScript ecosystem. Enjoy advanced language features like static typing with type inference, exhaustive pattern matching, immutability by default, structural equality or units of measure, and let the compiler catch the bugs for you before they ever get into runtime.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+#### Elmish
+> Elmish implements core abstractions that can be used to build Fable applications following the “model view update” style of architecture, as made famous by Elm.
 
-### Add social sharing buttons
+### Why SAFE?
+The SAFE stack provides developers who are already enjoying the benefits with functional programming, and in particular F#, with a flexible stack that provides complete end-to-end solutions for your web-enabled applications using popular and widely-used technologies.
 
-Simply add the following line anywhere in your markdown:
+For those developers who are not familiar with functional programming, or are .NET developers who have not taken the leap to F#, SAFE provides a coherent stack that will get you up and running as quickly as possible whilst leaving you safe in the knowledge that there's a community out there that can support you whilst you upskill.
 
-<pre><code>{% raw  %}
-{% include sharing.html %}
-{% endraw %}
-</code></pre>
+### A flexible stack to suit your needs
+Whilst the SAFE stacks recommends a number of specific technologies for you to use, it does not lock you in to any of them.
 
-and get a nice responsive sharing ribbon.
+#### A Pluggable Stack
 
-{% include sharing.html %}
+Here's an example system architecture that could make use of the SAFE stack.
 
-Add this at the bottom, or the top, or between every other paragraph if you're desprate for social validation.
+![](images/safe-architecture-1.png)
 
-Just remember to customize the buttons to fit your url in the `_includes/sharing.html` file. These buttons are made available and customizable by the good folks at kni-labs. See the documentation at [https://github.com/kni-labs/rrssb](https://github.com/kni-labs/rrssb) for more information.
+* Hosting Platform - provides the hosting environment for all services and data.
+* Storage - some standard data storage mechanism
+* Other services - includes messaging, logging or any other PAAS offered by the hosting platform.
+* Server-side web - the application servicing HTTP requests, favouring a functional-first approach.
+* Client-side web - application logic written in F# but cross-compiled into Javascript.
+* UI rendering - the application framework that handles UI interaction.
 
-### Font awesome is also included
+A typical SAFE implementation *might* look like this. However, as you can see, there are multiple alternatives that can be employed 
 
-<i class="fa fa-quote-left fa-3x fa-pull-left fa-border"></i> Now you can use all the cool icons you want! [Font Awesome](http://fontawesome.io) is indeed awesome. But wait, you don't need this sweetness and you don't want that little bit of load time from the font awesome css? No problem, just disable it in the `config.yml` file, and it won't be loaded.
+| | SAFE | Alternative |
+|-|-|-|
+| Hosting Platform | Microsoft Azure | AWS, GCP |
+| Storage | SQL Azure, Azure Storage, Document DB | Dynamo DB etc. |
+| Other Services | Service Bus, App Insights, Event Hub | SQS etc. |
+| Server-side | Suave | Giraffe, WebSharper, Freya |
+| Client-side | Fable | WebSharper |
+| UI Rendering | Elmish | HTML + JQuery, AngularJS etc. |
 
-<ul class="fa-ul">
-  <li><i class="fa-li fa fa-check-square"></i>you can make lists...</li>
-  <li><i class="fa-li fa fa-check-square-o"></i>with cool icons like this,</li>
-  <li><i class="fa-li fa fa-spinner fa-spin"></i>even ones that move!</li>
-</ul>
+#### Mix with your existing stack
+Since SAFE doesn't force you to write your entire stack with it, you can easily work with an existing stack and port parts of your application as needed. Working with an external team that manage your client-side code? No problem - just use Suave and Azure for your back-end services. Already using ASP .NET Web API for your service side components? No worries - because Fable boils down to high quality Javascript, it works just fine with that, too!
 
-If you need them, you can stick any of the [605 icons](http://fontawesome.io/icons/) anywhere, with any size you like. ([See documentation](http://fontawesome.io/examples/))
+### How do I get started?
 
-<i class="fa fa-building"></i>&nbsp;&nbsp;<i class="fa fa-bus fa-lg"></i>&nbsp;&nbsp;<i class="fa fa-cube fa-2x"></i>&nbsp;&nbsp;<i class="fa fa-paper-plane fa-3x"></i>&nbsp;&nbsp;<i class="fa fa-camera-retro fa-4x">
-
-### Add images to make your point
-
-Images play nicely with this template as well. Add diagrams or charts to make your point, and the template will fit them in appropriately.
-
-<img src="images/hello.svg" alt="sample image">
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-Thanks to [Shu Uesengi](https://github.com/chibicode) for inspiring and providing the base for this template with his excellent work, [solo](https://github.com/chibicode).
-
-<hr>
-
-##### Footnotes:
-
-[^1]: This is a footnote. Click to return.
-
-[^2]: Here is another.
+### Who can I turn to for guidance?
