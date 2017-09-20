@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## A end-to-end, functional-first stack for cloud-ready web development that emphasises type safe programming.
+## An end-to-end, functional-first stack for cloud-ready web development that emphasises type-safe programming.
 
 ### What is SAFE?
 SAFE is a technology stack that brings together several technologies into a single, coherent stack for typesafe, flexible end-to-end web-enabled applications that are written entirely in F#.
@@ -37,16 +37,16 @@ Here's an example system architecture that could make use of the SAFE stack.
 
 ![](images/safe-architecture-1.png)
 
-* Hosting Platform - provides the hosting environment for all services and data.
-* Storage - some standard data storage mechanism
-* Other services - includes messaging, logging or any other PAAS offered by the hosting platform.
-* Server-side web - the application servicing HTTP requests, favouring a functional-first approach.
-* Client-side web - application logic written in F# but cross-compiled into Javascript.
-* UI rendering - the application framework that handles UI interaction.
+* **Hosting Platform** - provides the hosting environment for all services and data.
+* **Storage** - some standard data storage mechanism
+* **Other services** - includes messaging, logging or any other PAAS offered by the hosting platform.
+* **Server-side web** - the application servicing HTTP requests, favouring a functional-first approach.
+* **Client-side web** - application logic written in F# but cross-compiled into Javascript.
+* **UI rendering** - the application framework that handles UI interaction.
 
-A typical SAFE implementation *might* look like this. However, as you can see, there are multiple alternatives that can be employed 
+A typical SAFE implementation *might* look like this. However, as you can see, there are multiple alternatives that can be employed to build a stack that adheres to the principles of SAFE but uses alternative technologies or tools where appropriate.
 
-| | SAFE | Alternative |
+| | "Pure" SAFE | "DIY" Safe |
 |-|-|-|
 | Hosting Platform | Microsoft Azure | AWS, GCP |
 | Storage | SQL Azure, Azure Storage, Document DB | Dynamo DB etc. |
@@ -56,8 +56,15 @@ A typical SAFE implementation *might* look like this. However, as you can see, t
 | UI Rendering | Elmish | HTML + JQuery, AngularJS etc. |
 
 #### Mix with your existing stack
-Since SAFE doesn't force you to write your entire stack with it, you can easily work with an existing stack and port parts of your application as needed. Working with an external team that manage your client-side code? No problem - just use Suave and Azure for your back-end services. Already using ASP .NET Web API for your service side components? No worries - because Fable boils down to high quality Javascript, it works just fine with that, too!
+Since SAFE doesn't force you to write your entire stack with it, you can easily work with an existing stack and port parts of your application as needed. Working with an external team that manage your client-side code? No problem - just use Suave and Azure for your back-end services. Already using ASP .NET Web API for your server-side components? That's fine - F# through Fable boils down to easy-to-read, high-quality Javascript!
 
 ### How do I get started?
+There's an excellent repository that you can use as a basic template that uses core parts of SAFE to create a web application using Suave and Fable to create a reactive application running on the client. Over time, we'll be adding to these repositories with more fully featured applications running on Azure as well as using other technologies that fit within the aims of SAFE.
+
+You can reach out to the SAFE team on [@safe_stack](https://twitter.com/safe_stack) or on the regular F# channels on Slack, either the [official F# Foundation site](https://fsharp.slack.com/) or on the [Functional Programming Slack site](https://functionalprogramming.slack.com). We'll be expanding this over time.
 
 ### Who can I turn to for guidance?
+There are a number of expert practitions who support and are available to help you get the best out of the SAFE stack. We'll be adding more over time to this list - if you want to be added here, plus let us know!
+
+#### Compositional IT
+[Compositional IT](https://compositional-it.com) are experts in designing functional-first, cloud-ready systems, offering consultancy and support, training and development. Run by an F# MVP and well-known member of the .NET community, they are dedicated to raising awareness of the benefits of both functional programming and harnessing the power of the cloud to deliver high-quality, low-cost solutions.
