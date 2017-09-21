@@ -63,9 +63,7 @@ A typical SAFE implementation *might* look like this. However, as you can see, t
 Since SAFE doesn't force you to write your entire stack with it, you can easily work with an existing stack and port parts of your application as needed. Working with an external team that manage your client-side code? No problem - just use Suave and Azure for your back-end services. Already using ASP .NET Web API for your server-side components? That's fine - F# through Fable boils down to easy-to-read, high-quality Javascript! Want to still use raw SQL rather than an ORM to generate it for you? F# has you covered, with type providers that still give you type safety at the SQL level.
 
 ### How do I get started?
-There's an [excellent sample repository](https://t.co/OVJkvNHW9j) that you can use as a basic template; it uses Suave and Fable to create a reactive application running in the browser. Over time, we'll be adding more fully featured applications that can also run on Azure as well as using other technologies that fit within the aims of SAFE.
-
-You can reach out to the SAFE team on [@safe_stack](https://twitter.com/safe_stack) or on the regular F# channels on Slack, either the [official F# Foundation site](https://fsharp.slack.com/) or on the [Functional Programming Slack site](https://functionalprogramming.slack.com). We'll be expanding this over time.
+There's an excellent sample [SAFE Bookstore](https://t.co/OVJkvNHW9j) that you can use as a basic template; it uses Suave and Fable to create a reactive application running in the browser. Over time, we'll be adding more fully featured applications that can also run on Azure as well as using other technologies that fit within the aims of SAFE.
 
 ### Who can I turn to for guidance?
 There are a number of expert practitions who support and are available to help you get the best out of the SAFE stack. We'll be adding more over time to this list - if you want to be added here, plus let us know!
@@ -75,3 +73,9 @@ There are a number of expert practitions who support and are available to help y
 
 #### Lambda Factory
 [Lambda Factory](http://lambdafactory.io) is a consulting company specializing in designing and building complex systems using Functional Programming languages such as F#, Elm and Elixir. It also offers help with introducing functional programming and open source driven development to the organization, as well as trainings, workshops and mentoring. Founded by open source contributor and well-known member of F# Community, Lambda Factory has been committed to supporting F# Community and helping it grow.
+
+#### The F# Community
+The SAFE stack was written largely by the community as open source projects, such as Suave, Fable, Elmish (as well as the alternative elements within the stack). All those teams are always happy to contribute and help out.
+
+You can also reach out to the SAFE team on [@safe_stack](https://twitter.com/safe_stack) or on the regular F# channels on Slack: either the [official F# Foundation](https://fsharp.slack.com/) or on the [Functional Programming Slack](https://functionalprogramming.slack.com). We'll be expanding this over time.
+
