@@ -1,0 +1,150 @@
+---
+layout: landing
+---
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2>{{ site.title }}</h2>
+							<p>{{ site.description | markdownify }}</p>
+							<!-- <ul class="actions">
+								<li><a href="" class="button special">Getting started</a></li>
+							</ul> -->
+						</div>
+						<a href="#one" class="more scrolly">Learn More</a>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style1 special">
+						<div class="inner">
+							<header class="major">
+								<h2>What is SAFE?</h2>
+								<br/>
+								<img src="images/safe_logo_128-01.png" />
+								<p>SAFE is a technology stack that brings together several technologies into a single, coherent stack for type-safe, flexible, web-enabled applications that are written wherever possible in F#, thus allowing you to reuse your existing skill set as much as possible.</p>
+							</header>
+						</div>
+					</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper alt style2">
+						<section class="spotlight">
+							<div class="image"><img src="images/pic01.jpg" alt="" style="width: auto; margin: auto; height: 400px"/></div><div class="content">
+								<h2>Suave IO</h2>
+								<p>Suave is a lightweight, non-blocking web server. The non-blocking I/O model is efficient and suitable for building fast, scalable network applications. In fact, Suave is written in a completely non-blocking fashion throughout. Suave runs on Linux, OS X and Windows flawlessly.</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/pic02.jpg" alt="" style="width: auto;  margin: auto; height: 400px"/></div><div class="content">
+								<h2>Azure</h2>
+								<p>Microsoft Azure is a growing collection of integrated cloud services that developers and IT professionals use to build, deploy, and manage applications through our global network of datacenters. With Azure, you get the freedom to build and deploy wherever you want, using the tools, applications, and frameworks of your choice.</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/pic03.jpg" alt="" style="width: auto; margin: auto; height: 400px"/></div><div class="content">
+								<h2>Fable</h2>
+								<p>Fable brings all the power of F# to the JavaScript ecosystem. Enjoy advanced language features like static typing with type inference, exhaustive pattern matching, immutability by default, structural equality or units of measure, and let the compiler catch the bugs for you before they ever get into runtime.</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/pic04.jpg" alt="" style="width: auto; margin: auto; height: 400px" /></div><div class="content">
+								<h2>Elmish</h2>
+								<p>Elmish implements core abstractions that can be used to build Fable applications following the “model view update” style of architecture, as made famous by Elm</p>
+							</div>
+						</section>
+					</section>
+
+				<!-- Three -->
+				<section id="three" class="wrapper style1 special">
+					<div class="inner">
+						<header class="major">
+							<h2>Why SAFE?</h2>
+							<p>The SAFE stack provides developers who are already enjoying the benefits with functional programming, and in particular F#, with a flexible stack that provides complete end-to-end solutions for your web-enabled applications using popular and widely-used technologies.</p>
+							<p>For those developers who are not familiar with functional programming, or are .NET developers who have not taken the leap to F#, SAFE provides a coherent stack that will get you up and running as quickly as possible whilst leaving you safe in the knowledge that there's a community out there that can support you whilst you upskill.</p>
+						</header>
+					</div>
+				</section>
+
+				<!-- Four -->
+					<section id="four" class="wrapper style3 special">
+						<div class="inner">
+							<header class="major">
+								<h2>A flexible stack to suit your needs</h2>
+								<p>Whilst the SAFE stacks recommends a number of specific technologies for you to use, it does not lock you in to any of them. Indeed, the goal of the SAFE stack is simply to provide a basic template of core technologies which take advantage of the benefits that F# provides as widely as possible within your stack</p>
+							</header>
+							<ul class="features">
+								<li class="icon fa-cloud">
+									<h3>Hosting Platform</h3>
+									<p>Provides the hosting environment for all services and data - Microsoft Azure</p>
+									<p>Alternatives - AWS, GCP</p>
+								</li>
+								<li class="icon fa-hdd-o">
+									<h3>Storage</h3>
+									<p>Some standard data storage mechanism - SQL Azure, Azure Storage, Document DB</p>
+									<p>Alternatives - Dynamo DB etc.</p>
+								</li>
+								<li class="icon fa- fa-paper-plane-o">
+									<h3>Other Services</h3>
+									<p>Includes messaging, logging or any other PAAS offered by the hosting platform - Service Bus, App Insights, Event Hub</p>
+									<p>Alternatives - SQS etc.</p>
+								</li>
+								<li class="icon fa-server">
+									<h3>Server-side web</h3>
+									<p>The application servicing HTTP requests, favouring a functional-first approach - Suave</p>
+									<p>Alternatives - Giraffe, WebSharper, Freya etc.</p>
+								</li>
+								<li class="icon fa-laptop">
+									<h3>Client-side</h3>
+									<p>Application logic written in F# but cross-compiled into Javascript - Fable</p>
+									<p>Alternatives - WebSharper</p>
+								</li>
+								<li class="icon fa-code">
+									<h3>UI Rendering</h3>
+									<p>The application framework that handles UI interaction - Elmish</p>
+									<p>Alternatives - HTML + JQuery, AngularJS etc.</p>
+								</li>
+							</ul>
+							<header class="major">
+								<h2>Retrofit to your existing stack</h2>
+								<p>Since SAFE doesn't force you to write your entire stack with it, you can easily work with an existing stack and port parts of your application as needed. Working with an external team that manage your client-side code? No problem - just use Suave and Azure for your back-end services. Already using ASP .NET Web API for your server-side components? That's fine - F# through Fable boils down to easy-to-read, high-quality Javascript! Want to still use raw SQL rather than an ORM to generate it for you? F# has you covered, with type providers that still give you type safety at the SQL level.</p>
+							</header>
+						</div>
+					</section>
+
+					<!-- Five -->
+				<section id="five" class="wrapper style2 special">
+					<div class="inner">
+						<header class="major">
+							<h2>How do I get started?</h2>
+							<p>There's an excellent sample <a href="https://t.co/OVJkvNHW9j">SAFE Bookstore</a> that you can use as a basic template; it uses Suave and Fable to create a reactive application running in the browser. Over time, we'll be adding more fully featured applications that can also run on Azure as well as using other technologies that fit within the aims of SAFE.</p>
+						</header>
+					</div>
+				</section>
+
+				<!-- Six -->
+				<section id="six" class="wrapper style5 special">
+					<div class="inner">
+						<header class="major">
+							<h2>Who can I turn to for guidance?</h2>
+							<p style="text-align: left"><a href="https://compositional-it.com">Compositional IT</a> are experts in designing functional-first, cloud-ready systems, offering consultancy and support, training and development. Run by an F# MVP and well-known member of the .NET community, they are dedicated to raising awareness of the benefits of both functional programming and harnessing the power of the cloud to deliver high-quality, low-cost solutions.</p>
+							<p style="text-align: left"><a href="http://lambdafactory.io">Lambda Factory</a> is a consulting company specializing in designing and building complex systems using Functional Programming languages such as F#, Elm and Elixir. It also offers help with introducing functional programming and open source driven development to the organization, as well as trainings, workshops and mentoring. Founded by open source contributor and well-known member of F# Community, Lambda Factory has been committed to supporting F# Community and helping it grow.</p>
+							<p style="text-align: left">The F# Community - The SAFE stack was written largely by the community as open source projects, such as Suave, Fable, Elmish (as well as the alternative elements within the stack). All those teams are always happy to contribute and help out. </p>
+							<p style="text-align: left"> You can also reach out to the SAFE team on <a href="https://twitter.com/safe_stack">@safe_stack</a> or on the regular F# channels on Slack: either the  <a href="https://fsharp.slack.com/">official F# Foundation</a> or on the <a href="https://functionalprogramming.slack.com">Functional Programming Slack</a>. We'll be expanding this over time. </p>
+
+						</header>
+					</div>
+				</section>
+
+				<!-- CTA -->
+					<section id="cta" class="wrapper style4">
+						<div class="inner">
+							<header>
+								<h2>What's next?
+								</h2>
+							</header>
+							<ul class="actions vertical">
+								<li><a href="https://compositional-it.com/blog/2017/09-22-safe-release/index.html" class="button fit special">Read more about SAFE</a></li>
+								<li><a href="https://github.com/SAFE-Stack/SAFE-BookStore" class="button fit">Getting started sample</a></li>
+								<li><a href="https://github.com/SAFE-Stack/SAFE-Nightwatch" class="button fit">SAFE + React native sample</a></li>
+							</ul>
+						</div>
+					</section>
