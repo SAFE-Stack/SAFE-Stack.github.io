@@ -2,12 +2,14 @@
 layout: default
 ---
 
+![](images/safe_logo_256-01.png)
+
 ## An end-to-end, functional-first stack for cloud-ready web development that emphasises type-safe programming.
 
 ### What is SAFE?
-SAFE is a technology stack that brings together several technologies into a single, coherent stack for typesafe, flexible end-to-end web-enabled applications that are written entirely in F#.
+SAFE is a technology stack that brings together several technologies into a single, coherent stack for type-safe, flexible, web-enabled applications that are written wherever possible in F#, thus allowing you to reuse your existing skill set as much as possible.
 
-The default stack consists of the following core components
+The default stack consists of the following core components:
 
 ![](images/stack.png)
 
@@ -23,13 +25,15 @@ The default stack consists of the following core components
 #### Elmish
 > Elmish implements core abstractions that can be used to build Fable applications following the “model view update” style of architecture, as made famous by Elm.
 
+Together, these components provide the capability to write entire applications, from data access through to client-side UIs entirely in F# in a performant, type-safe manner.
+
 ### Why SAFE?
 The SAFE stack provides developers who are already enjoying the benefits with functional programming, and in particular F#, with a flexible stack that provides complete end-to-end solutions for your web-enabled applications using popular and widely-used technologies.
 
 For those developers who are not familiar with functional programming, or are .NET developers who have not taken the leap to F#, SAFE provides a coherent stack that will get you up and running as quickly as possible whilst leaving you safe in the knowledge that there's a community out there that can support you whilst you upskill.
 
 ### A flexible stack to suit your needs
-Whilst the SAFE stacks recommends a number of specific technologies for you to use, it does not lock you in to any of them.
+Whilst the SAFE stacks recommends a number of specific technologies for you to use, it does not lock you in to any of them. Indeed, the goal of the SAFE stack is simply to provide a basic template of core technologies which take advantage of the benefits that F# provides as widely as possible within your stack.
 
 #### A Pluggable Stack
 
@@ -55,8 +59,8 @@ A typical SAFE implementation *might* look like this. However, as you can see, t
 | Client-side | Fable | WebSharper |
 | UI Rendering | Elmish | HTML + JQuery, AngularJS etc. |
 
-#### Mix with your existing stack
-Since SAFE doesn't force you to write your entire stack with it, you can easily work with an existing stack and port parts of your application as needed. Working with an external team that manage your client-side code? No problem - just use Suave and Azure for your back-end services. Already using ASP .NET Web API for your server-side components? That's fine - F# through Fable boils down to easy-to-read, high-quality Javascript!
+#### Retrofit to your existing stack
+Since SAFE doesn't force you to write your entire stack with it, you can easily work with an existing stack and port parts of your application as needed. Working with an external team that manage your client-side code? No problem - just use Suave and Azure for your back-end services. Already using ASP .NET Web API for your server-side components? That's fine - F# through Fable boils down to easy-to-read, high-quality Javascript! Want to still use raw SQL rather than an ORM to generate it for you? F# has you covered, with type providers that still give you type safety at the SQL level.
 
 ### How do I get started?
 There's an excellent repository that you can use as a basic template that uses core parts of SAFE to create a web application using Suave and Fable to create a reactive application running on the client. Over time, we'll be adding to these repositories with more fully featured applications running on Azure as well as using other technologies that fit within the aims of SAFE.
