@@ -72,40 +72,36 @@ layout: landing
 								<p>Whilst the SAFE stacks recommends a number of specific technologies for you to use, it does not lock you in to any of them. Indeed, the goal of the SAFE stack is simply to provide a basic template of core technologies which take advantage of the benefits that F# provides as widely as possible within your stack</p>
 							</header>
 							<ul class="features">
-								<li class="icon fa-cloud">
-									<h3>Hosting Platform</h3>
-									<p>Provides the hosting environment for all services and data - Microsoft Azure</p>
-									<p>Alternatives - AWS, GCP</p>
-								</li>
-								<li class="icon fa-hdd-o">
-									<h3>Storage</h3>
-									<p>Some standard data storage mechanism - SQL Azure, Azure Storage, Document DB</p>
-									<p>Alternatives - Dynamo DB etc.</p>
-								</li>
-								<li class="icon fa- fa-paper-plane-o">
-									<h3>Other Services</h3>
-									<p>Includes messaging, logging or any other PAAS offered by the hosting platform - Service Bus, App Insights, Event Hub</p>
-									<p>Alternatives - SQS etc.</p>
-								</li>
 								<li class="icon fa-server">
 									<h3>Server-side web</h3>
-									<p>The application servicing HTTP requests, favouring a functional-first approach - Suave</p>
+									<p>Use Suave to create applications that favour a functional-first approach for servicing HTTP requests</p>
 									<p>Alternatives - Giraffe, WebSharper, Freya etc.</p>
 								</li>
+								<li class="icon fa-cloud">
+									<h3>Cloud Platform</h3>
+									<p>Use Microsoft Azure to provide the hosting environment for compute, storage and other platform services</p>
+									<p>Alternatives - AWS, GCP</p>
+								</li>
 								<li class="icon fa-laptop">
-									<h3>Client-side</h3>
-									<p>Application logic written in F# but cross-compiled into Javascript - Fable</p>
+									<h3>Client-side web</h3>
+									<p>Use Fable to create application logic written in F# but cross-compiled into Javascript</p>
 									<p>Alternatives - WebSharper</p>
 								</li>
 								<li class="icon fa-code">
 									<h3>UI Rendering</h3>
-									<p>The application framework that handles UI interaction - Elmish</p>
+									<p>Use Elmish as an client-side application framework to handle UI interaction</p>
 									<p>Alternatives - HTML + JQuery, AngularJS etc.</p>
 								</li>
 							</ul>
 							<header class="major">
 								<h2>Retrofit to your existing stack</h2>
-								<p>Since SAFE doesn't force you to write your entire stack with it, you can easily work with an existing stack and port parts of your application as needed. Working with an external team that manage your client-side code? No problem - just use Suave and Azure for your back-end services. Already using ASP .NET Web API for your server-side components? That's fine - F# through Fable boils down to easy-to-read, high-quality Javascript! Want to still use raw SQL rather than an ORM to generate it for you? F# has you covered, with type providers that still give you type safety at the SQL level.</p>
+								<p>Since SAFE doesn't force you to write your entire stack with it, you can easily work with an existing stack and port parts of your application as needed.
+									<ul>
+										<li class="icon fa-circle">Working with an external team that manage your client-side code? No problem - just use Suave and Azure for your back-end services.</li>
+										<li class="icon fa-circle">Already using ASP .NET Web API for your server-side components? That's fine - F# through Fable boils down to easy-to-read, high-quality Javascript!</li>
+										<li class="icon fa-circle">Want to still use raw SQL rather than an ORM to generate it for you? F# has you covered, with type providers that still give you type safety at the SQL level.</li>
+									</ul>
+								</p>
 							</header>
 						</div>
 					</section>
