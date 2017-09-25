@@ -7,7 +7,6 @@ Website for Suave + Azure + Fable + Elmish aka SAFE-Stack
 |-|-|-|-|-|-|-|-|
 | NET 4.x | F#4.0 | VS2015 | Classic | Yes | Yes | No | No |
 | NET 4.x | F#4.1 | VS2017 | Classic | Yes | Yes | No | No |
-| NET 4.x | F#4.1 | VS2017 | Modern | No | No | No | No |
 | NET 4.x | F#4.0 | VS2015 | Classic | Yes | Yes | No | No |
 | NET 4.x | F#4.1 | Other | Classic | Yes | Yes | No | No |
 | NET 4.x | F#4.1 | Other | Modern | Yes | Yes | Yes | Yes |
