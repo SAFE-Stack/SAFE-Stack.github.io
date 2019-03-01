@@ -1,5 +1,5 @@
 # SAFE-Stack.github.io
-Website for Suave + Azure + Fable + Elmish aka SAFE-Stack
+Website for Saturn + Azure + Fable + Elmish aka SAFE-Stack
 
 # Supported SAFE runtimes
 Due to the many different combinations of .NET runtimes, F# versions, IDEs and F# Project Types, the following table can be used to quickly identify what runtime stack that are required in order to utilise different versions of the stack.
