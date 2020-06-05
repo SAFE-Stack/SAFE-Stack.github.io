@@ -1,77 +1,430 @@
----
-layout: landing
----
-				<!-- Banner -->
-					<section id="banner">
-						<div class="inner">
-							<h2>{{ site.title }}</h2>
-							<p>
-								An end-to-end, functional-first stack <br/>
-								for cloud-ready web development <br/>
-								that emphasizes type-safe programming
-							</p>
-							<!-- <ul class="actions">
-								<li><a href="" class="button special">Getting started</a></li>
-							</ul> -->
-						</div>
-						<a href="#one" class="more scrolly">Learn More</a>
-					</section>
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+	<meta name="generator" content="Hugo 0.71.0" />
+    
 
-					<!-- SAFE Header -->
-					<section id="one" class="wrapper style1 special">
-						<div class="inner">
-							<header class="major">
-								<h2>What is SAFE?</h2>
-								<br/>
-								<img src="images/safe_top.png" />
-								<p>SAFE is an application development stack that brings several technologies together into a single, coherent stack for
-									type-safe, flexible, web-enabled applications that can be written almost entirely in F#.</p>
-							</header>
-						</div>
-					</section>
+<meta property="og:title" content="SAFE" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://localhost:1313/" />
 
-					<!-- Three -->
-					<section id="four" class="wrapper style2 special">
-						<div class="inner">
-							<ul class="features">
-								<li class="icon fa-heart">
-									<h3>Functional first</h3>
-									<p>Make use of F# throughout your application stack. No need to compromise by shoehorning your design into
-									an OO framework - make use of functional-first constructs and ideas throughout your codebase in F#, even in the browser!
-									Start taking advantage of F# features such as type providers, rich domain modelling and a safer type system today.
-								</li>
-								<li class="icon fa-plus">
-									<h3>Skill reuse</h3>
-									<p>Reuse your team's server-side development skills across the entire application stack. There's no need to become a Javascript
-									or CSS expert - with tools and libraries such as Fable, Elmish and Fulma, you can create compelling, mobile-friendly web applications
-									today.</p>
-								</li>
-								<li class="icon fa-file">
-									<h3>Code sharing</h3>
-									<p>Seamlessly share F# between client and server. Create domain models that exist on client and server without having to worry about
-									serialization, or create validation logic that can run in both browser and server - no need for expensive round trips for validation in the browser.</p>
-								</li>
-								<li class="icon fa-fighter-jet">
-									<h3>Rapid development cycle</h3>
-									<p>Get results - fast. With full support for .NET Core, including flexible cross platform templates, and cutting-edge
-										features like hot module reloading and shared code you can start creating full-blown applications quicker than ever before.</p>
-								</li>
-							</ul>
-						</div>
-					</section>
 
-					<!-- CTA -->
-					<section id="cta" class="wrapper style4">
-						<div class="inner">
-							<header>
-								<h2>Getting started
-								</h2>
-							</header>
-							<ul class="actions vertical">
-								<li><a href="https://safe-stack.github.io/docs/intro/" class="button fit">Read the documentation</a></li>
-								<li><a href="https://compositional-it.com/blog/2017/09-22-safe-release/index.html" class="button fit">Read more about SAFE</a></li>
-								<li><a href="https://safe-stack.github.io/docs/support/" class="button fit">Get support</a></li>
-								<li><a href="https://github.com/CompositionalIT/SAFE-Dojo/" class="button fit special">Try the SAFE dojo!</a></li>
-							</ul>
-						</div>
-					</section>
+
+<meta name="description" content="Hardcoded description; the author should update :)" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>SAFE</title>
+    
+<link rel="icon" type="image/png" href="/images/favicon.png" />
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans:400,600" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/css/style.min.4ea1740797837f2ac96b7e88c940112c927f0b3e6d614bb77ca20e89ae92a2ec.css" integrity="sha256-TqF0B5eDfyrJa36IyUARLJJ/Cz5tYUu3fKIOia6Souw=">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+    
+    <div id="preloader">
+      <div id="status"></div>
+    </div>
+
+    
+    
+    <section class="hero is-fullheight is-default is-bold">
+  
+
+<nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/logos/safe_logo.png" alt="">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+      <div id="navbar-menu" class="navbar-menu is-static">
+
+        <div class="navbar-end">
+          <a href="https://www.compositional-it.com/news-blog/introducing-the-safe-stack/" class="navbar-item is-secondary">
+            About SAFE
+          </a>
+          <a href="https://safe-stack.github.io/docs/support/" class="navbar-item is-secondary">
+            Get Support
+          </a>
+          <a href="https://safe-stack.github.io/docs/intro/" class="navbar-item">
+            <span class="button signup-button rounded secondary-btn raised">
+              Read the Docs
+            </span>
+          </a>
+        </div>
+      </div>
+  </div>
+</nav>
+
+  
+
+<nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/logos/safe_logo.png" alt="">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="cloned-navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="cloned-navbar-menu" class="navbar-menu is-fixed">
+
+      <div class="navbar-end">
+        <a href="https://www.compositional-it.com/news-blog/introducing-the-safe-stack/" class="navbar-item is-secondary">
+          About SAFE
+        </a>
+        <a href="https://safe-stack.github.io/docs/support/" class="navbar-item is-secondary">
+          Get Support
+        </a>
+        <a href="https://safe-stack.github.io/docs/intro/" class="navbar-item">
+          <span class="button signup-button rounded secondary-btn raised">
+            Read the Docs
+          </span>
+        </a>
+      </div>
+    </div>
+</div>
+</nav>
+
+  
+<style>
+  @media only screen and (max-width: 768px) {
+    #padlock {
+      display: none;
+    }
+  }
+</style>
+<div class="hero-body">
+  <div class="container">
+    <div class="columns is-vcentered" style="padding-bottom:2em;">
+      <div class="column is-4 is-offset-1 landing-caption">
+        <h1 class="title is-1 is-bold is-spaced">
+          SAFE Stack
+        </h1>
+        
+        <h2 class="subtitle is-5 is-muted">
+          The best way to write functional-first web applications.
+        </h2>
+        
+        <p>
+          <a class="button cta rounded primary-btn raised" href="#benefits">
+            Learn More
+          </a>
+        </p>
+      </div>
+      <div class="column is-5 is-offset-2 has-text-centered">
+        <figure id="padlock" class="image" style="padding-left:5em;">
+          <img src="/images/illustrations/safe-stack.png" alt="Description" style="display: block; max-width:20em; max-height:20em; width: auto; height: auto; margin-left:2.5em">
+        </figure>
+      </div>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <div class="columns" style="padding-bottom:3em;padding-top:3em;">
+      <div class="column is-one-third">
+        <div class="feature-card is-bordered has-text-centered">
+          <div class="card-title">
+            <h4 >Quick Start</h4>
+          </div>
+          <div class="card-icon">
+            <img src="/images/illustrations/icons/mouse-globe.svg">
+          </div>
+          <div class="card-text">
+            <p>Ready to get hands-on? It&#39;s quick and easy.</p>
+          </div>
+          <div class="card-action">
+            <a href="https://safe-stack.github.io/docs/quickstart/" class="button btn-align-md primary-btn raised">Get Up and Running</a>
+          </div>
+        </div>
+      </div>
+      <div class="column is-one-third">
+        <div class="feature-card is-bordered has-text-centered">
+          <div class="card-title">
+            <h4 >SAFE Dojo</h4>
+          </div>
+          <div class="card-icon">
+            <img src="/images/illustrations/icons/laptop-cloud.svg">
+          </div>
+          <div class="card-text">
+            <p>Learn SAFE by doing beginner-friendly challenges.</p>
+          </div>
+          <div class="card-action">
+            <a href="https://github.com/CompositionalIT/SAFE-Dojo" class="button btn-align-md primary-btn raised">Do the SAFE Dojo</a>
+          </div>
+        </div>
+      </div>
+      <div class="column is-one-third">
+        <div class="feature-card is-bordered has-text-centered">
+          <div class="card-title">
+            <h4 >Live Demo</h4>
+          </div>
+          <div class="card-icon">
+            <img src="/images/illustrations/icons/plug-cloud.svg">
+          </div>
+          <div class="card-text">
+            <p>See how it all comes together in production.</p>
+          </div>
+          <div class="card-action">
+            <a href="https://safe-search-demo-web.azurewebsites.net/" class="button btn-align-md primary-btn raised">View a Live Demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+<div class="hero-foot mb-20">
+  <div class="container">
+    <div class="tabs is-centered">
+      <ul>
+        <li>
+          <a href="https://www.compositional-it.com/" target="_blank">
+            <img class="partner-logo" src="/images/logos/clients/cit.png">
+          </a>
+        </li>
+        <li>
+          <a href="https://lambdafactory.io/" target="_blank">
+            <img class="partner-logo" src="/images/logos/clients/lambda.png">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+    
+
+    
+
+    
+    
+<style>
+    @media only screen and (max-width: 768px) {
+        section#benefits div.column.is-narrow {
+            display: flex;
+            justify-content: center;
+        }
+        section#benefits div.column.is-narrow p.image {
+            height:5em;
+            width: 5em;
+        }
+        section#benefits div.column.is-7 div.column {
+            text-align: center;
+        }
+    }
+</style>
+<section id="benefits" class="section is-medium">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-centered-tablet-portrait">
+                <h1 class="title section-title">Why SAFE Stack?</h1>
+                <h3 class="subtitle is-5 is-muted">SAFE Stack allows you to quickly develop compelling web applications that use industry-standard technologies whilst using F# to ensure an enjoyable development experience.</h3>
+                <div class="divider"></div>
+            </div>
+            <div class="column is-7 mt-60">
+                    <div class="columns is-vcentered" style="margin-bottom:3em;">
+                        <div class="column is-narrow">
+                            <p class="image">
+                                <img src="/images/illustrations/icons/productive.svg">
+                            </p>
+                        </div>
+                        <div class="column">
+                            <h1 style="font-weight:bold; font-size:13pt;">Productive</h1>
+                            <p>
+                                <span>Develop full stack web applications entirely in F#. Benefit from the power that F# and functional programming brings both on the server with .NET Core but also in the browser. Share types and functions seamlessly - no more manual mapping between browser and server languages!</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="columns is-vcentered" style="margin-bottom:3em;">
+                        <div class="column is-narrow">
+                            <p class="image">
+                                <img src="/images/illustrations/icons/fun.svg">
+                            </p>
+                        </div>
+                        <div class="column">
+                            <h1 style="font-weight:bold; font-size:13pt;">Fun</h1>
+                            <p>
+                                <span>SAFE Stack brings not only confidence to you but a sense of satisfaction and enjoyment to your development cycle. You&rsquo;ll be delighted with the ease at which you can create client-server web applications.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="columns is-vcentered" style="margin-bottom:3em;">
+                        <div class="column is-narrow">
+                            <p class="image">
+                                <img src="/images/illustrations/icons/flexible.svg">
+                            </p>
+                        </div>
+                        <div class="column">
+                            <h1 style="font-weight:bold; font-size:13pt;">Flexible</h1>
+                            <p>
+                                <span>SAFE Stack isn&rsquo;t a walled garden or closed ecosystem. It runs on top of existing ecosystems and tools including ASP .NET Core, .NET Core, Webpack, React and NPM. Using SAFE Stack means you can continue to use the libraries and tools that you already know and love, but still take advantage of the extra benefits that F# brings to the table!</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="columns is-vcentered" style="margin-bottom:3em;">
+                        <div class="column is-narrow">
+                            <p class="image">
+                                <img src="/images/illustrations/icons/safety-first.svg">
+                            </p>
+                        </div>
+                        <div class="column">
+                            <h1 style="font-weight:bold; font-size:13pt;">A Safe Bet</h1>
+                            <p>
+                                <span>F# levels up the safety of your system without making you write reams of code. Gain more confidence that your code does what you expect it to do, with no dynamic typing required for the browser. And the SAFE Stack runs on trusted platforms such as ASP .NET, .NET Core, NPM and Webpack - popular, high-performance and reliable platforms with millions of users.</span>
+                            </p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+
+    
+    
+<section class="section is-medium section-secondary">
+  <div class="container">
+
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2 light-text is-spaced">Testimonials</h2>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="columns is-vcentered">
+        <div class="column is-4">
+          <figure class="testimonial">
+            <blockquote>
+              We at msu solutions GmbH are big fans of SAFE stack. For the last couple of years we were already using F# open source technologies for web and mobile projects. Tools like the Fable compiler and elmish are rock solid and a pleasure to work with.
+            </blockquote>
+            <div class="author">
+              <img src="/images/illustrations/faces/1.png" alt=""/>
+              <h5>MSU Solutions</h5>
+            </div>
+          </figure>
+        </div>
+        <div class="column is-4">
+          <figure class="testimonial">
+            <blockquote>
+              It just works! The docs are very detailed and helpful. I got the template up and running on a public URL on Azure within one hour. Without any issues. Even though I am new to dotnet core and Azure.
+            </blockquote>
+            <div class="author">
+              <img src="/images/illustrations/faces/2.png" alt=""/>
+              <h5>Goswin Rothenthal</h5>
+            </div>
+          </figure>
+        </div>
+        <div class="column is-4">
+          <figure class="testimonial">
+            <blockquote>
+              SAFE was the perfect place to start our biological design and data management platform. I would start with SAFE again in a heartbeat for a new project. We shared some of our experiences at Open F# 2018.
+            </blockquote>
+            <div class="author">
+              <img src="/images/illustrations/faces/3.png" alt=""/>
+              <h5>Demetrix</h5>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    
+
+    
+    
+<section class="section is-medium">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-10 is-offset-1">
+        <div class="has-text-centered" style="border: 2pt solid #8E44AD">
+          <img class="" src="/images/illustrations/mockups/safe-search.PNG">
+        </div>
+      </div>
+    </div>
+
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2">SAFE Search</h2>
+      <h3 class="subtitle is-5 is-muted">A property search demo built entirely with SAFE</h3>
+    </div>
+
+    <p class="has-text-centered mt-20">
+      <a class="button cta is-large rounded secondary-btn raised" href="https://safe-search-demo-web.azurewebsites.net/" target="_blank">
+        View Live
+      </a>
+    </p>
+  </div>
+</section>
+    
+
+    
+
+    
+    
+<footer class="footer footer-dark" style="padding-bottom:4em; background-color:#008CB7;">
+  <div class="container">
+    <div class="level">
+      <div class="level-left">
+        <div class="level-item">
+          <div class="footer-logo">
+            <img src="/images/logos/safe_grayscale.png" style="height:4.8em;">
+          </div>
+        </div>
+      </div>
+      <div class="level-right">
+        <div class="level item">
+          <div class="footer-column">
+            <div class="footer-header" style="text-align:center;">
+              <h3 style="color:#9FACB0; font-weight:bolder;">Follow Us</h3>
+              <a href="https://github.com/SAFE-stack" style="margin-left:0.5em; margin-right:0.5em; color:white;">
+                  <span class="icon"><i class="fa fa-github fa-2x"></i></span>
+              </a>
+              <a href="https://twitter.com/safe_stack" style="margin-left:0.5em; margin-right:0.5em; color:white;">
+                  <span class="icon"><i class="fa fa-twitter fa-2x"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+    
+    <div id="backtotop"><a href="#"></a></div>
+
+    
+    
+
+
+    
+    <div id="backtotop"><a href="#"></a></div>
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+<script src="/js/fresh.js"></script>
+<script src="/js/jquery.panelslider.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  </body>
+</html>
